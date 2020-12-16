@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>大作业</title>
+  <style>
+    #taobao {
+      position: absolute;
+      width: 100%;
+      height: 1198px;
+      z-index: 1;
+      left: 0px;
+      top: 0px;
+    }
+    #taobao #top {
+      height: 55px;
+      width: 100%;
+      border-bottom-style: solid;
+      border-top-width: 2px;
+      border-top-style: solid;
+      border-top-color: #fa7d3c;
+      border-bottom-width: 1px;
+      border-bottom-color: #e9e9e9;
+    }
+    #taobao #a1170 #a115 {
+      float: left;
+      height: 520px;
+      width: 115px;
+    }
+    #taobao #top #sousuolan {
+      height: 52px;
+      width: 1238px;
+      margin-right: auto;
+      margin-left: auto;
+    }
+    .sousuo {
+      font-family: "微软雅黑";
+      font-size: 16px;
+      color: #CCC;
+    }
+    .biaopti {
+      font-family: "微软雅黑";
+      font-size: 15px;
+      color: #666;
+    }
+    .zhegnwen {
+      font-family: "微软雅黑";
+      font-size: 15px;
+      line-height: 24px;
+      color: #333333;
+    }
+    #taobao #a1170 {
+      height: 950px;
+      width: 1170px;
+      margin-right: auto;
+      margin-left: auto;
+      margin-top: 25px;
+    }
+    a:link {
+      color: #666;
+      text-decoration: none;
+    }
+    a:visited {
+      text-decoration: none;
+      color: #666;
+    }
+    a:hover {
+      text-decoration: none;
+      color: #F60;
+    }
+    a:active {
+      text-decoration: none;
+    }
+    #taobao #a1170 #a690 {
+      float: left;
+      height: 870px;
+      width: 690px;
+      margin-left: 18px;
+    }
+    #taobao #a1170 #a340 {
+      float: left;
+      height: 925px;
+      width: 325px;
+      margin-left: 20px;
+      background-color: #f2f2f5;
+    }
+    #taobao #a1170 #a115 #daohang {
+      height: 38px;
+      width: 115px;
+      margin-top: 2px;
+      font-family: "微软雅黑";
+      font-size: 18px;
+      color: #CCC;
+      line-height: 38px;
+      text-align: center;
+      border-radius: 3px;
+    }
+    #taobao #a1170 #a115 #daohang01 {
+      height: 38px;
+      width: 115px;
+      font-family: "微软雅黑";
+      font-size: 18px;
+      color: #FFF;
+      line-height: 38px;
+      text-align: center;
+      background-color: #fc4432;
+      -radius: 3px;
+    }
+    .d_over{
+      background-color:#fc3f31;
+    }
+    .d_out{
+      background-color:#ffffff;
+    }
+    a.white:link {
+      color: #353535;
+      text-decoration: none;
+    }
+    a.white:visited {
+      text-decoration: none;
+      color: #353535;
+    }
+    a.white:hover {
+      text-decoration: none;
+      color: #ffffff;
+    }
+    a.white:active {
+      text-decoration: none;
+    }
+    #taobao #a1170 #a690 #banner {
+      height: 300px;
+      width: 690px;
+    }
+    #taobao #a1170 #a690 #pubuliu {
+      height: 195px;
+      border-bottom-width: 1px;
+      border-bottom-style: solid;
+      border-bottom-color: #d5d5d5;
+    }
+    #taobao #a1170 #a340 #degnlu {
+      height: 288px;
+      width: 300px;
+      margin-top: 25px;
+      margin-left: 13px;
+      background-color: #ffffff;
+    }
+    #taobao #a1170 #a340 #a300_544 {
+      height: 544px;
+      width: 300px;
+      margin-top: 16px;
+      margin-left: 13px;
+      border-top-width: 2px;
+      border-top-style: solid;
+      border-top-color: #FE813F;
+    }
+    .a_xiaozi {
+      font-family: "微软雅黑";
+      font-size: 12px;
+      color: #999;
+    }
+    #taobao #down {
+      height: 140px;
+      background-color: #f2f2f5;
+      width: 100%;
+      margin-top: 30px;
+    }
+    #taobao #down #down966 {
+      height: 140px;
+      width: 966px;
+      margin-right: auto;
+      margin-left: auto;
+    }
+    .form {
+      width: 400px;
+      display: inline-block;
+      float: left;
+    }
+    .form__div {
+      width: 270px;
+      height: 40px;
+      margin: 4px 0;
+      padding-left: 10px;
+      font-size: 13px;
+      letter-spacing: .15px;
+      border: none;
+      outline: none;
+      border-radius: 2px;
+      border: 1px solid #dadee0;
+      display: inline-block;
+    }
+    .form__input {
+      width: 200px;
+      height: 38px;
+      padding-left: 10px;
+      font-size: 18px;
+      letter-spacing: .15px;
+      border: none;
+      outline: none;
+      transition: .25s ease;
+      float: right;
+      border-radius: 2px;
+      display: inline-block;
+      font-weight: bold;
+    }
+    .form_label {
+      height:40px;
+      line-height: 40px;
+      display: inline-block;
+      float: left;
+      color:rgb(107, 90, 90);
+    }
+    .form_tip {
+      height: 20px;
+      width: 270px;
+      text-align: left;
+      font-size: 9px;
+      color: gray;
+      margin: 3px;
+    }
+    .form__button{
+      height: 40px;
+      width: 285px;
+      background-color: #e67417;
+      color: white;
+      border: none;
+      margin-top: 4px;
+      cursor: pointer;
+    }
+    .form2 {
+      width: 400px;
+      display: inline-block;
+      float: left;
+    }
+    .form2 div {
+      color: #E51125;
+      margin:20px 0 50px;
+    }
+    .Carousel{
+      position: relative;
+      width:680px;
+      height:310px;
+      overflow: hidden;
+      border:5px solid rgba(189, 184, 184,0.5);
+      z-index: 1;
+    }
+    #picture{
+      position: absolute;
+      width: 4000px;
+      height: 310px;
+    }
+    #picture img{
+      float: left;
+      width:680px;
+      height:310px;
+    }
+    .Carousel .arrow{
+      cursor: pointer;
+      position:absolute;
+      top:40%;
+      padding:10px 15px;
+      display: inline-block;
+      font-size: 50px;
+      z-index: 2;
+      color:rgb(161, 157, 157);
+      font-weight: bold;
+    }
+    .Carousel .arrow_left{
+      left:0;
+    }
+    .Carousel .arrow_right{
+      right: 0;
+    }
+    .Carousel:hover .arrow{
+      display: block;
+    }
+    .Carousel .arrow:hover{
+      font-weight: bold;
+      color:white;
+    }
+    ul,li{
+      list-style:none ;
+    }
+    .active{
+        font-size:25px;
+        color:rgb(207, 29, 184);
+        font-weight:bold;
+        font-style: italic;
+        font-family: serif;
+    }
+
+  </style>
+</head>
+<body>
+  <div id="taobao">
+    <div id="top">
+      <div id="sousuolan">
+        <table width="1236" border="0">
+          <tr>
+            <td width="156" height="49"><a href="index.html"><img src="images/10.jpg" width="140" height="55" border="0" /></a></td>
+            <td width="392"><label for="textfield"></label>
+            <input name="textfield" type="text" class="sousuo" id="textfield" value="了解哆啦A梦" size="53" /></td>
+            <td width="176" class="biaopti"><a href="#"><img src="images/sousuo.png" alt="" width="29" height="29" /></a></td>
+            <td width="28" class="biaopti"><img src="images/shouye.png" width="25" height="25" /></td>
+            <td width="34" class="biaopti"><a href="#">首页</a></td>
+            <td width="18">&nbsp;</td>
+            <td width="32" class="biaopti"><img src="images/sousuo.png" width="25" height="25" /></td>
+            <td width="39" class="biaopti"><a href="#">好物</a></td>
+            <td width="15">&nbsp;</td>
+            <td width="26" class="biaopti"><img src="images/faxian.png" width="25" height="25" /></td>
+            <td width="45" class="biaopti"><a href="#">发现</a></td>
+            <td width="12">&nbsp;</td>
+            <td width="31" class="biaopti"><img src="images/sousuo.png" width="25" height="25" /></td>
+            <td width="47" class="biaopti"><a href="#">推荐</a></td>
+            <td width="13">&nbsp;</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <div id="a1170">
+      <div id="a115">
+        <div id="daohang01" class="d_out" onmouseover="this.className='d_over'" onmouseout="this.className='d_out'"><a href="#" class="white">热门</a></div>&nbsp;&nbsp;
+        <div id="daohang" class="d_out" onmouseover="this.className='d_over'" onmouseout="this.className='d_out'"><a href="#" class="white">动画预告</a></div>&nbsp;&nbsp;
+        <div id="daohang" class="d_out" onmouseover="this.className='d_over'" onmouseout="this.className='d_out'"><a href="#" class="white">及时新闻</a></div>&nbsp;&nbsp;
+        <div id="daohang" class="d_out" onmouseover="this.className='d_over'" onmouseout="this.className='d_out'"><a href="#" class="white">周边好物</a></div>&nbsp;&nbsp;
+        <div id="daohang" class="d_out" onmouseover="this.className='d_over'" onmouseout="this.className='d_out'"><a href="#" class="white">榜单</a></div>&nbsp;&nbsp;
+        <div id="daohang" class="d_out" onmouseover="this.className='d_over'" onmouseout="this.className='d_out'"><a href="#" class="white">哆啦俱乐部</a></div>&nbsp;&nbsp;
+        <div id="daohang" class="d_out" onmouseover="this.className='d_over'" onmouseout="this.className='d_out'"><a href="#" class="white">梦幻小镇</a></div>&nbsp;&nbsp;
+        <div id="daohang" class="d_out" onmouseover="this.className='d_over'" onmouseout="this.className='d_out'"><a href="#" class="white">任意门</a></div>&nbsp;&nbsp;
+        <div id="daohang" class="d_out" onmouseover="this.className='d_over'" onmouseout="this.className='d_out'"><a href="#" class="white">时光机</a></div>&nbsp;&nbsp;
+      </div>
+      <div id="a690">
+        <div class="Carousel">
+        <div class="banner">
+          <div id="picture">
+            <img src="images/1.jpg" alt="">
+            <img src="images/2.jpg" alt="">
+            <img src="images/3.jpg" alt="">
+            <img src="images/4.jpg" alt="">
+            <img src="images/5.jpg" alt="">
+        </div>
+      </div>
+      <span class="arrow arrow_left"><</span>
+      <span class="arrow arrow_right">></span>
+      <div id="pre" class="hbut"></div>
+      <div id="next" class="hbut"></div>
+    </div>
+    <div id="pubuliu">
+      <table width="100%" border="0">
+        <tr>
+          <ul>
+          <td width="49%" height="194"><a href="#"><img src="images/7.jpg" width="324" height="170" /></a></td>
+          <td width="3%"></td>
+          <td width="48%" class="zhegnwen"><a href="#"></a>
+              <li>鼠标放至此处了解更多，哆啦A梦哆啦A梦哆啦A梦，鼠标放至此处了解更多，哆啦A梦哆啦A梦哆啦A梦</li>
+            </ul>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <div id="pubuliu">
+      <table width="100%" border="0">
+        <tr>
+          <td width="49%" height="194"><a href="#"><img src="images/8.jpg" width="326" height="170" /></a></td>
+          <td width="3%">&nbsp;</td>
+          <td width="48%" class="zhegnwen"><a href="#"></a><li>鼠标放至此处了解更多，哆啦A梦哆啦A梦哆啦A梦鼠标放至此处了解更多，哆啦A梦哆啦A梦哆啦A梦</li>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <div id="pubuliu">
+      <table width="100%" border="0">
+        <tr>
+          <td width="49%" height="194"><a href="#"><img src="images/9.jpg" width="327" height="170" border="0" /></a></td>
+          <td width="3%">&nbsp;</td>
+          <td width="48%" class="zhegnwen"><a href="#"></a><li>鼠标放至此处了解更多，哆啦A梦哆啦A梦哆啦A梦鼠标放至此处了解更多，哆啦A梦哆啦A梦哆啦A梦</li>
+          </ul>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </div>
+  <div id="a340">
+    <div id="degnlu">
+      <table width="100%" border="0">
+        <tr>
+          <td align="right"><table width="70%" border="0">
+            <tr>
+                <td height="49">
+                  <span>&nbsp;&nbsp;&nbsp;
+                     游客快来注册吧<br />
+              </span></td>
+            </tr>
+            
+            <tr>
+              <td height="49" class="sousuo"><label for="textfield2"></label>
+                <div class="form" id="a-form">
+                  <div id="" class="form__div">
+                      <div class="form_label">
+                          用&nbsp;&nbsp;户&nbsp;&nbsp;名
+                      </div>
+                      <input id="username" class="form__input" type="text">
+                  </div>
+                      <div class="form_tip" id="nametip"></div>
+                      <div class="form__div">
+                      <div class="form_label">
+                          设置密码
+                      </div>
+                      <input id="pwd" class="form__input" type="password">
+                  </div>
+                  <div class="form_tip" id="pwdtip"></div>
+                  <button class="form__button" onclick="register()">立即注册</button>
+              </div>
+              <div class="form2" id="success">
+              </div>
+          </div>      
+            </tr>
+            <tr>
+              <td class="zhegnwen"><span class="biaopti">
+                <input type="checkbox" name="checkbox" id="checkbox" />
+                记住我&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 忘记密码</span></td>
+            </tr>
+          </table></td>
+        </tr>
+      </table>
+    </div>
+    <div id="a300_544">
+      <table width="100%" border="0">
+        <tr>
+          <td height="74"><table width="100%" border="0">
+            <tr>
+              <td width="54%" height="51" class="zhegnwen"><a href="#">周边好物一起带回家</a>&nbsp;</td>
+              <td width="10%">&nbsp;</td>
+              <td width="36%" rowspan="2"><a href="#"><img src="images/4.jpg" width="123" height="72" /></a></td>
+            </tr>
+          </table></td>
+        </tr>
+        <tr>
+          <td><table width="100%" border="0">
+            <tr>
+              <td width="54%" height="51" class="zhegnwen"><a href="#">都在看</a></td>
+              <td width="10%">&nbsp;</td>
+              <td width="36%" rowspan="2"><a href="#"><img src="images/2.jpg" alt="" width="123" height="72" /></a></td>
+            </tr>
+          </table></td>
+        </tr>
+        <tr>
+          <td><table width="100%" border="0">
+            <tr>
+              <td width="52%" height="51" class="zhegnwen"><a href="#">最新消息在这里面讨论&nbsp;</a></td>
+              <td width="6%">&nbsp;</td>
+              <td width="42%" rowspan="2"><a href="#"><img src="images/9.jpg" alt="" width="120" height="73" /></a></td>
+            </tr>
+          </table></td>
+        </tr>
+        <tr>
+          <td><table width="100%" border="0">
+            <tr>
+              <td width="54%" height="51" class="zhegnwen"><a href="#">我的哆啦A梦</a>&nbsp;</td>
+              <td width="10%">&nbsp;</td>
+              <td width="36%" rowspan="2"><a href="#"><img src="images/12.jpg" alt="" width="123" height="72" /></a></td>
+            </tr>
+            </tr>
+          </table></td>
+        </tr>
+        <tr>
+          <td><table width="100%" border="0">
+            <tr>
+              <td width="54%" height="51" class="zhegnwen"><a href="#">南极冰天大雪地</a>&nbsp;</td>
+              <td width="10%">&nbsp;</td>
+              <td width="36%" rowspan="2"><a href="#"><img src="images/13.jpg" alt="" width="124" height="71" /></a></td>
+            </tr>
+          </table></td>
+        </tr>
+        <tr>
+          <td><table width="100%" border="0">
+            <tr>
+              <td width="54%" height="51" class="zhegnwen"><a href="#">哆啦A梦的任意门</a>&nbsp;</td>
+              <td width="10%">&nbsp;</td>
+              <td width="36%" rowspan="2"><a href="#"><img src="images/14.jpg" alt="" width="124" height="71" /></a></td>
+            </tr>
+          </table></td>
+        </tr>
+        <tr>
+          <td><table width="100%" border="0">
+            <tr>
+              <td width="54%" height="51" class="zhegnwen"><a href="#">更多动画片</a>&nbsp;</td>
+              <td width="10%">&nbsp;</td>
+              <td width="36%" rowspan="2"><a href="#"><img src="images/15.jpg" alt="" width="124" height="71" /></a></td>
+            </tr>
+          </table></td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</div>
+<div id="down">
+  <div id="down966"><table width="100%" border="0">
+<tr>
+  <td>&nbsp;</td>
+</tr>
+<tr>
+  <td align="center" class="biaopti">客服热线&nbsp;&nbsp; 4000-960-960&nbsp;&nbsp;&nbsp; 意见反馈&nbsp;&nbsp;&nbsp; 舞弊举报&nbsp;&nbsp;&nbsp; 开放平台&nbsp;&nbsp;&nbsp; 淘宝招聘&nbsp;&nbsp;&nbsp; 导航&nbsp;&nbsp;&nbsp;&nbsp; 投诉处理大厅      
+&nbsp;&nbsp;
+京ICP证100780号<br />
+&nbsp;&nbsp;&nbsp;
+互联网服务许可证&nbsp;&nbsp; 京网文[2017]10291-1172号  &nbsp; 京ICP备1200205号&nbsp;&nbsp;<br />
+Copyright © 2009-2019 WEIBO&nbsp;&nbsp;&nbsp; 北京微梦创科网络技术有限公司&nbsp;&nbsp;京公网安备11000002000019号&nbsp;</td>
+</tr>
+
+  
+</body>
+<script>
+  //注册账号
+  var username = document.getElementById("username");
+	var nametip = document.getElementById("nametip");
+	var pwdtip = document.getElementById("pwdtip");
+	var pwd = document.getElementById("pwd");
+  var success = document.getElementById("success");
+  username.onfocus = function() {
+    nametip.innerHTML = "支持中文数字";
+  }
+  username.onblur = function() {
+      if (this.value == "") {
+        nametip.innerHTML = "用户名不能为空!";
+      }else{
+        nametip.innerHTML = "";
+      }
+  }
+  pwd.onfocus = function() {
+		pwdtip.innerHTML = "建议使用两种字符组合";
+	}
+	pwd.onblur = function() {
+		  if (this.value == "") {
+			  pwdtip.innerHTML = "密码不能为空!";
+		  }else{
+			  pwdtip.innerHTML = "";
+		  }
+  }
+  function register(){
+      if(username.value == ""){
+        return
+      }
+      if(pwd.value == ""){
+        return
+      }
+		var html="";
+		html+="<div>注册成功!</div>";
+		success.innerHTML = html;
+  }
+  //轮播图效果
+    var pic =document.getElementById('picture');
+    var next = document.querySelector(".arrow_right");
+    var prev = document.querySelector(".arrow_left");
+    var imgwidth=pic.children[0].offsetWidth;
+    var move=0;	
+    next.onclick=function(){
+        if(move==pic.children.length-1){
+            move=0;
+            pic.style.left=0+"px";
+        }
+        move++;
+        animate(pic,-move*imgwidth);
+    }
+    prev.onclick=function(){
+        if(move==0){
+            move=pic.children.length-1;
+            pic.style.left=-move*imgwidth+"px";
+        }
+        move--;
+        animate(pic,-move*imgwidth);
+    }
+    var timer = null;
+    function autoPlay () {
+    timer = setInterval(function () {
+        next.onclick();
+    },1800);
+    }
+    autoPlay();
+    var Carousel = document.querySelector(".Carousel");
+    Carousel.onmouseenter = function () {
+    clearInterval(timer);
+    }
+    Carousel.onmouseleave = function () {
+    autoPlay();  
+    }
+    function animate(element,distance){
+        clearInterval(element.timer)
+        element.timer=setInterval(function(){
+             var present=element.offsetLeft;
+             var movement=10;
+             movement=present<distance?movement:-movement;    
+             present+=movement;
+             if(Math.abs(present-distance)>Math.abs(movement)){
+                 element.style.left=present+"px"
+             }else{
+                 clearInterval(element.timer);
+                 element.style.left=distance+"px"
+             }
+        },10);
+    }
+    //鼠标移动到此触发事件发生
+    var liList = document.getElementsByTagName("li");
+    for(var i= 0;i<liList.length;i++){
+        liList[i].onmouseover = function(){
+            this.setAttribute("class","active");
+        }
+        liList[i].onmouseout = function(){
+            this.removeAttribute("class");
+        }
+    }
+</script>
+</html>
